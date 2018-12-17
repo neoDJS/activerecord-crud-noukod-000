@@ -2,7 +2,7 @@ class CreateMovies < ActiveRecord::Migration[5.2]
   def change
     create_table :movies do |m|
       m.string :title
-      m.integrer :release_date
+      m.integer :release_date
       m.string :director
       m.string :lead
       m.boolean :in_theaters
